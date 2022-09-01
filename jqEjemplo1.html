@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="smiley.png">
+    <title>jQuery Ejemplo 01</title>
+</head>
+<body>
+    <h1 id="t1">Titulo 1</h1>
+    <h2 id="t2">Titulo 2</h2>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let x = $(document)
+        x.ready(inicio)
+
+        function inicio(){
+            let x = $("#t1");
+            x.click(metodo1);
+            x = $("#t2");
+            x.click(metodo2);
+        }
+
+        function metodo1(){
+            let x = $("#t1")
+            x.css("color", "aqua")
+            x.css("font-weight", "bold")
+            x.css("font-size", "20px")
+        }
+
+        function metodo2(){
+            let x = $("#t2")
+            x.css("color", "red")
+            x.css("back-ground color", "grey")
+            x.css("font-weight", "italic")
+            x.css("font-size", "80px")
+        }
+
+        
+    </script>
+</body>
+</html>
